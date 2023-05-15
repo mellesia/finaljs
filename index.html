@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+</head>
+
+
+<body>
+
+
+
+
+    <h1 class="text-center text-info my-2">Our Products </h1>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <input type="text" id="title" placeholder="Title" class="form-control">
+                </div>
+
+                <div class="row" id="cost">
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="number" id="price" placeholder="Price" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="number" id="tax" placeholder="Taxes" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="number" id="t:cost" placeholder="transferCost" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="number" id="discount" placeholder="Discount" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <input type="number" id="total" readonly placeholder="Total" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" id="count">
+                    <input type="text" placeholder="Count" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="department" placeholder="Department" class="form-control">
+                </div>
+
+                <div class="d-grid" id="btnCreate">
+                    <button class="btn btn-info"> Create </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h1 class="text-center text-info my-4">Our Products </h1>
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                <table class="table table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Tax</th>
+                        <th>T: Cost</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>Department</th>
+                    </tr>
+                    <tbody id="tableBody">
+
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/jquery-3.6.4.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
